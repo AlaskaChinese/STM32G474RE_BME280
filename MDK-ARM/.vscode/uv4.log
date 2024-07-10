@@ -1,0 +1,21 @@
+*** Using Compiler 'V6.22', folder: 'D:\Keil_v5\MDK\ARM\ARMCLANG\Bin'
+Build target 'STM32G474RE'
+compiling i2c.c...
+../Core/Src/main.c(98): error: use of undeclared identifier 'user_i2c_read'
+   98 |   dev.read = user_i2c_read;
+      |              ^
+../Core/Src/main.c(99): error: use of undeclared identifier 'user_i2c_write'
+   99 |   dev.write = user_i2c_write;
+      |               ^
+../Core/Src/main.c(100): error: use of undeclared identifier 'user_delay_ms'
+  100 |   dev.delay_ms = user_delay_ms;
+      |                  ^
+../Core/Src/main.c(103): error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  103 |   printf("The init result is:%d\r\n",rslt);
+      |   ^
+../Core/Src/main.c(103): note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+4 errors generated.
+compiling main.c...
+"STM32G474RE\STM32G474RE.axf" - 4 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
