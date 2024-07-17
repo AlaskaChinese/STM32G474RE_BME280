@@ -24,4 +24,4 @@ stm32g474re/oled_u8g2.o: ..\U8g2\BSP\OLED_U8g2.c ..\U8g2\BSP\OLED_U8g2.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart.h \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
-  ..\Core\Inc\gpio.h ..\U8g2\u8g2.h ..\U8g2\u8x8.h
+  ..\Core\Inc\i2c.h ..\U8g2\u8g2.h ..\U8g2\u8x8.h

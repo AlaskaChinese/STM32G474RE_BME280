@@ -77,6 +77,10 @@
   "files.associations": {
     "main.h": "c",
     "i2c.h": "c",
-    "usart.h": "c"
+    "usart.h": "c",
+    "bme280_bsp.h": "c",
+    "bme280.h": "c",
+    "bme280_selftest.h": "c",
+    "oled_u8g2.h": "c"
   }
 }

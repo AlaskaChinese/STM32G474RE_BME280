@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32G474xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../BME280/BME280_SensorAPI;../BME280/BME280_BSP;../BME280/BME280_SensorAPI/selftest;../U8g2;../U8g2/BSP</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc;../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32G4xx/Include;../Drivers/CMSIS/Include;../BME280/BME280_SensorAPI;../BME280/BME280_BSP;../BME280/BME280_SensorAPI/selftest;../U8g2/BSP;..\U8g2</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -710,23 +710,18 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>U8G2</GroupName>
+          <GroupName>OLED</GroupName>
           <Files>
             <File>
-              <FileName>mui.c</FileName>
+              <FileName>OLED_U8g2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\U8g2\mui.c</FilePath>
+              <FilePath>..\U8g2\BSP\OLED_U8g2.c</FilePath>
             </File>
-            <File>
-              <FileName>mui_u8g2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\U8g2\mui_u8g2.c</FilePath>
-            </File>
-            <File>
-              <FileName>u8g2_arc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\U8g2\u8g2_arc.c</FilePath>
-            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>U8g2_lib</GroupName>
+          <Files>
             <File>
               <FileName>u8g2_bitmap.c</FileName>
               <FileType>1</FileType>
@@ -741,11 +736,6 @@
               <FileName>u8g2_buffer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\U8g2\u8g2_buffer.c</FilePath>
-            </File>
-            <File>
-              <FileName>u8g2_button.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\U8g2\u8g2_button.c</FilePath>
             </File>
             <File>
               <FileName>u8g2_circle.c</FileName>
@@ -863,6 +853,11 @@
               <FilePath>..\U8g2\u8x8_capture.c</FilePath>
             </File>
             <File>
+              <FileName>u8x8_d_a2printer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\U8g2\u8x8_d_a2printer.c</FilePath>
+            </File>
+            <File>
               <FileName>u8x8_d_ssd1306_128x64_noname.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\U8g2\u8x8_d_ssd1306_128x64_noname.c</FilePath>
@@ -921,16 +916,6 @@
               <FileName>u8x8_u16toa.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\U8g2\u8x8_u16toa.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>OLED</GroupName>
-          <Files>
-            <File>
-              <FileName>OLED_U8g2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\U8g2\BSP\OLED_U8g2.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -27,4 +27,6 @@ stm32g474re/bme280_bsp.o: ..\BME280\BME280_BSP\bme280_bsp.c \
   ..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_uart_ex.h \
   ..\BME280\BME280_SensorAPI\bme280.h \
   ..\BME280\BME280_SensorAPI\bme280_defs.h \
-  ..\BME280\BME280_SensorAPI\selftest\bme280_selftest.h
+  ..\BME280\BME280_SensorAPI\selftest\bme280_selftest.h \
+  ..\U8g2\BSP\OLED_U8g2.h ..\Core\Inc\main.h ..\Core\Inc\i2c.h \
+  ..\U8g2\u8g2.h ..\U8g2\u8x8.h

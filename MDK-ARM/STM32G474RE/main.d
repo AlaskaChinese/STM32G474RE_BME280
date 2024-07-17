@@ -27,4 +27,5 @@ stm32g474re/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Core\Inc\i2c.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
   ..\BME280\BME280_BSP\bme280_bsp.h ..\BME280\BME280_SensorAPI\bme280.h \
   ..\BME280\BME280_SensorAPI\bme280_defs.h \
-  ..\BME280\BME280_SensorAPI\selftest\bme280_selftest.h
+  ..\BME280\BME280_SensorAPI\selftest\bme280_selftest.h \
+  ..\U8g2\BSP\OLED_U8g2.h ..\U8g2\u8g2.h ..\U8g2\u8x8.h

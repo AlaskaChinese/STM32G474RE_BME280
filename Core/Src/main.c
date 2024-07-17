@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bme280_bsp.h"
+#include "OLED_U8g2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,8 +102,13 @@ int main(void)
   MX_I2C3_Init();
   MX_LPUART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  u8g2_t u8g2;
+  u8g2Init(&u8g2);
+  
   struct bme280_dev dev;
-
+  u8g2_ClearBuffer(&u8g2); 
+  u8g2_SendBuffer(&u8g2);
+  
   int8_t rslt = BME280_OK;
   dev.dev_id = BME280_I2C_ADDR_PRIM;
   dev.intf = BME280_I2C_INTF;
@@ -128,12 +134,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      LD2_ON;
-      HAL_Delay(1000);
-      LD2_OFF;
-      HAL_Delay(1000);
-      printf("hello");
-      stream_sensor_data_normal_mode(&dev);
+      // LD2_ON;
+      // HAL_Delay(1000);
+      // LD2_OFF;
+      // HAL_Delay(1000);
+      // printf("hello");
+      // u8g2_SetFont(&u8g2,u8g2_font_ncenB14_tr);
+      // u8g2_DrawStr(&u8g2,0,15, "Hello");
+      // u8g2_DrawCircle(&u8g2,64,32,30,U8G2_DRAW_ALL);
+      // u8g2_SendBuffer(&u8g2);
+      oled_sensor_data_normal_mode(&dev, &u8g2);
+      // u8g2_SendBuffer(&u8g2);
   }
   /* USER CODE END 3 */
 }
